@@ -1,0 +1,81 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box; /*하단테두리*/
+}
+
+
+/* @media (max-width :600px){
+	.pic{
+		background-color: #f0dfdf;
+	}
+} */
+
+@media (max-width: 767px) {
+	div.pic { background-color: rgb(244, 232, 166); }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	div.pic { background-color: lightblue; }
+}
+@media (min-width: 1025px) {
+	div.pic { background-color: lightpink; }
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Cafe24Ohsquareair';
+    min-width: 320px;
+}  
+
+  
+header div{
+	
+    border: 20px solid #f0dfdf;
+	padding:10px;
+
+	text-align: center;
+
+}
+
+
+section  .pic img{
+	object-fit: cover; 
+	width: 100%;
+	height: 100%;
+	
+}
+
+section{
+	display: flex;
+    flex-flow: row wrap;
+    flex: 2;
+    border: 20px solid rgba(209, 207, 207, 0.693);
+   
+
+    overflow-y: scroll;
+	margin: 0px auto;
+	padding:10px;
+
+	position: relative;
+
+	width:100%;
+    height: calc(100% - 60px);
+   
+}
+
+
+.pic{
+    display: flex;
+    flex-flow: column nowrap;
+	width: 280px;
+	height: 280px;
+    background-color: #333;
+
+	padding : 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
