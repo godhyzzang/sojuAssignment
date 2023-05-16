@@ -1,0 +1,37 @@
+.modal_show {
+  /*기본 : none*/
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  /*top,left는 최상단 꼭짓점의 위치 조정함*/
+  top: 50%;
+  left: 50%;
+  position: fixed; /*fixed와 무슨차이인가?*/
+
+  transform: translate(
+    -50%,
+    -50%
+  ); /*translate는 정중앙 기준 좌,상 위치 움직이는 것*/
+  width: 400px;
+  height: 200px;
+  background-color: rgb(222, 222, 222);
+  border-radius: 10px;
+  z-index: 20;
+  padding: 20px;
+  /*    event가 클릭되면*/
+}
+
+#X {
+  display: block;
+  position: relative;
+  width: 10%;
+  left: 90%;
+}
+
+span {
+  display: inline;
+  position: relative;
+}
+.modal_hide {
+  display: none;
+}
